@@ -1,0 +1,21 @@
+{
+	"name": "y2i/yii2-shop",
+	"description": "Yii2 shop module",
+	"type": "yii2-extension",
+	"keywords": ["yii2","shop","e-commerce"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Treschelet",
+			"email": "treschelet@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"y2i\\shop\\": ""
+		}
+	},
+    "extra": {
+        "bootstrap": "y2i\\shop\\Bootstrap"
+    }
+}
