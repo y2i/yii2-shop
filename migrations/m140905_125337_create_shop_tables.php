@@ -148,7 +148,10 @@ class m140905_125337_create_shop_tables extends Migration
         $this->createIndex('fk_products_category', $productsTable, 'category_id');
         $this->addForeignKey('fk_products_category', $productsTable, 'category_id', $categoryTable, 'id', 'NO ACTION', 'NO ACTION');
 
-
+        $this->createIndex('fk_variation_product', $variationTable, 'product_id');
+        $this->createIndex('fk_variation_specification', $variationTable, 'specification_id');
+        $this->addForeignKey('fk_variation_product', $variationTable, 'product_id', $productsTable, 'id', 'NO ACTION', 'NO ACTION');
+        $this->addForeignKey('fk_variation_specification', $variationTable, 'specification_id', $specificationTable, 'id', 'NO ACTION', 'NO ACTION');
     }
 
     public function down()

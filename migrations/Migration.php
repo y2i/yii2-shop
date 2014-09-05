@@ -35,7 +35,7 @@ class Migration extends \yii\db\Migration
         }
 
         if (!Yii::$app->hasModule('shop')) {
-            Yii::$app->setModule('user', [
+            Yii::$app->setModule('shop', [
                 'class' => 'y2i\shop\Module'
             ]);
         }
